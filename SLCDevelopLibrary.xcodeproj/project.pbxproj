@@ -10,7 +10,6 @@
 		7FD8A73618A5F3F2A430EB7F /* libPods-SLCDevelopLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F3CA0A8E8FA35B6D2F39BB /* libPods-SLCDevelopLibrary.a */; };
 		A0830D5820EF087300B5D9F7 /* LCGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0830D5720EF087300B5D9F7 /* LCGuideView.m */; };
 		A0830D5A20EF417700B5D9F7 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0830D5920EF417700B5D9F7 /* libSDWebImage.a */; };
-		A0830D5C20EF417B00B5D9F7 /* libSDAutoLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0830D5B20EF417B00B5D9F7 /* libSDAutoLayout.a */; };
 		A0830D5E20EF417F00B5D9F7 /* libSDCycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0830D5D20EF417F00B5D9F7 /* libSDCycleScrollView.a */; };
 		A0830D6020EF50D600B5D9F7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0830D5F20EF50D600B5D9F7 /* 1.jpg */; };
 		A76E040220E3CE45006346F5 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = A76E040120E3CE45006346F5 /* AppDelegate+AppService.m */; };
@@ -20,6 +19,23 @@
 		A76EFC1020E278E7006346F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EFC0920E278E6006346F5 /* Main.storyboard */; };
 		A76EFC1220E278E7006346F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EFC0C20E278E6006346F5 /* main.m */; };
 		A76EFC1320E278E7006346F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76EFC0D20E278E6006346F5 /* Assets.xcassets */; };
+		A77D545E2224D65200B3DBB4 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D545D2224D65200B3DBB4 /* MainTabBarController.m */; };
+		A77D54612224D66C00B3DBB4 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D54602224D66C00B3DBB4 /* RootNavigationController.m */; };
+		A77D54642224DAEC00B3DBB4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D54632224DAEC00B3DBB4 /* HomeViewController.m */; };
+		A77D548322251DFE00B3DBB4 /* LCViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D548222251DFE00B3DBB4 /* LCViewControllerIntercepter.m */; };
+		A77D548622251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D548522251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m */; };
+		A7CAC9162223C25C0016C4A8 /* LCBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9152223C25C0016C4A8 /* LCBannerView.m */; };
+		A7CAC91A2223C8FD0016C4A8 /* NSString+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9192223C8FD0016C4A8 /* NSString+LCAdd.m */; };
+		A7CAC91D2223C9120016C4A8 /* UIImage+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC91C2223C9120016C4A8 /* UIImage+LCAdd.m */; };
+		A7CAC9202223C93D0016C4A8 /* UIResponder+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC91F2223C93D0016C4A8 /* UIResponder+LCAdd.m */; };
+		A7CAC9232223C94D0016C4A8 /* UIViewController+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9222223C94D0016C4A8 /* UIViewController+LCAdd.m */; };
+		A7CAC9262223C9590016C4A8 /* UIView+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9252223C9590016C4A8 /* UIView+LCAdd.m */; };
+		A7CAC9292223C9650016C4A8 /* UIButton+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9282223C9650016C4A8 /* UIButton+LCAdd.m */; };
+		A7CAC92C2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC92B2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m */; };
+		A7CAC92F2223C98B0016C4A8 /* NSDate+LCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC92E2223C98B0016C4A8 /* NSDate+LCAdd.m */; };
+		A7CAC9352223D0B80016C4A8 /* LCSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9342223D0B80016C4A8 /* LCSortView.m */; };
+		A7CAC9382223D3540016C4A8 /* LCSortDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9372223D3540016C4A8 /* LCSortDataModel.m */; };
+		A7EA78CF221E6C1000BFFCFF /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA78CE221E6C1000BFFCFF /* LCAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +61,41 @@
 		A76EFC0C20E278E6006346F5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A76EFC0D20E278E6006346F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76EFC1420E279BB006346F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A77D545C2224D65200B3DBB4 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		A77D545D2224D65200B3DBB4 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		A77D545F2224D66C00B3DBB4 /* RootNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		A77D54602224D66C00B3DBB4 /* RootNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		A77D54622224DAEC00B3DBB4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A77D54632224DAEC00B3DBB4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A77D548122251DFE00B3DBB4 /* LCViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCViewControllerIntercepter.h; sourceTree = "<group>"; };
+		A77D548222251DFE00B3DBB4 /* LCViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCViewControllerIntercepter.m; sourceTree = "<group>"; };
+		A77D548422251E2D00B3DBB4 /* LCNavigationControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNavigationControllerIntercepter.h; sourceTree = "<group>"; };
+		A77D548522251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNavigationControllerIntercepter.m; sourceTree = "<group>"; };
+		A7CAC9142223C25C0016C4A8 /* LCBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCBannerView.h; sourceTree = "<group>"; };
+		A7CAC9152223C25C0016C4A8 /* LCBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCBannerView.m; sourceTree = "<group>"; };
+		A7CAC9182223C8FD0016C4A8 /* NSString+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC9192223C8FD0016C4A8 /* NSString+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC91B2223C9120016C4A8 /* UIImage+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC91C2223C9120016C4A8 /* UIImage+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC91E2223C93D0016C4A8 /* UIResponder+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC91F2223C93D0016C4A8 /* UIResponder+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC9212223C94D0016C4A8 /* UIViewController+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC9222223C94D0016C4A8 /* UIViewController+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC9242223C9590016C4A8 /* UIView+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC9252223C9590016C4A8 /* UIView+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC9272223C9650016C4A8 /* UIButton+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC9282223C9650016C4A8 /* UIButton+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC92A2223C97E0016C4A8 /* CAGradientLayer+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC92B2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC92D2223C98B0016C4A8 /* NSDate+LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+LCAdd.h"; sourceTree = "<group>"; };
+		A7CAC92E2223C98B0016C4A8 /* NSDate+LCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LCAdd.m"; sourceTree = "<group>"; };
+		A7CAC9302223C9950016C4A8 /* LCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAdd.h; sourceTree = "<group>"; };
+		A7CAC9332223D0B80016C4A8 /* LCSortView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSortView.h; sourceTree = "<group>"; };
+		A7CAC9342223D0B80016C4A8 /* LCSortView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSortView.m; sourceTree = "<group>"; };
+		A7CAC9362223D3540016C4A8 /* LCSortDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSortDataModel.h; sourceTree = "<group>"; };
+		A7CAC9372223D3540016C4A8 /* LCSortDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSortDataModel.m; sourceTree = "<group>"; };
+		A7EA78CD221E6C1000BFFCFF /* LCAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
+		A7EA78CE221E6C1000BFFCFF /* LCAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
 		A7EFDDBC221E399A00A73A4B /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
 		D7F3CA0A8E8FA35B6D2F39BB /* libPods-SLCDevelopLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLCDevelopLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA79342FFEE9198361D6B5E1 /* Pods-SLCDevelopLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCDevelopLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCDevelopLibrary/Pods-SLCDevelopLibrary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +107,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0830D5E20EF417F00B5D9F7 /* libSDCycleScrollView.a in Frameworks */,
-				A0830D5C20EF417B00B5D9F7 /* libSDAutoLayout.a in Frameworks */,
 				A0830D5A20EF417700B5D9F7 /* libSDWebImage.a in Frameworks */,
 				7FD8A73618A5F3F2A430EB7F /* libPods-SLCDevelopLibrary.a in Frameworks */,
 			);
@@ -65,13 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0830D5520EF082D00B5D9F7 /* GuideView(引导页) */ = {
+		A0830D5520EF082D00B5D9F7 /* LCGuideView */ = {
 			isa = PBXGroup;
 			children = (
 				A0830D5620EF087300B5D9F7 /* LCGuideView.h */,
 				A0830D5720EF087300B5D9F7 /* LCGuideView.m */,
 			);
-			path = "GuideView(引导页)";
+			path = LCGuideView;
 			sourceTree = "<group>";
 		};
 		A76EFBD620E26C1B006346F5 = {
@@ -95,13 +145,13 @@
 		A76EFBE120E26C1B006346F5 /* SLCDevelopLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				A77D54592224D5D000B3DBB4 /* Base */,
 				A7EFDDBA221E382C00A73A4B /* Modules */,
 				A76EFBFF20E27839006346F5 /* Manager */,
-				A76EFBFE20E277D7006346F5 /* Base */,
 				A76EFBFD20E277B9006346F5 /* ThirdLibrary */,
 				A76EFBFC20E27794006346F5 /* Resource */,
 				A76EFBFB20E2775D006346F5 /* Define */,
-				A76EFBFA20E2772D006346F5 /* Untils */,
+				A76EFBFA20E2772D006346F5 /* Utils */,
 				A76EFBF820E27712006346F5 /* AppDelegate */,
 				A76EFC0320E27892006346F5 /* Supporting Files */,
 			);
@@ -119,12 +169,17 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		A76EFBFA20E2772D006346F5 /* Untils */ = {
+		A76EFBFA20E2772D006346F5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A0830D5520EF082D00B5D9F7 /* GuideView(引导页) */,
+				A77D548022251DE400B3DBB4 /* Intercepter */,
+				A7CAC9322223D0A50016C4A8 /* LCSortView */,
+				A7CAC9172223C8CE0016C4A8 /* Category */,
+				A7CAC9132223C23E0016C4A8 /* LCBannerView */,
+				A7EA78CC221E6BF300BFFCFF /* LCAlertView */,
+				A0830D5520EF082D00B5D9F7 /* LCGuideView */,
 			);
-			path = Untils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A76EFBFB20E2775D006346F5 /* Define */ = {
@@ -149,13 +204,6 @@
 			children = (
 			);
 			path = ThirdLibrary;
-			sourceTree = "<group>";
-		};
-		A76EFBFE20E277D7006346F5 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		A76EFBFF20E27839006346F5 /* Manager */ = {
@@ -189,19 +237,112 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		A77D54592224D5D000B3DBB4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A77D545B2224D5ED00B3DBB4 /* RootNavigationController */,
+				A77D545A2224D5E000B3DBB4 /* TabBarController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A77D545A2224D5E000B3DBB4 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A77D545C2224D65200B3DBB4 /* MainTabBarController.h */,
+				A77D545D2224D65200B3DBB4 /* MainTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		A77D545B2224D5ED00B3DBB4 /* RootNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				A77D545F2224D66C00B3DBB4 /* RootNavigationController.h */,
+				A77D54602224D66C00B3DBB4 /* RootNavigationController.m */,
+			);
+			path = RootNavigationController;
+			sourceTree = "<group>";
+		};
+		A77D548022251DE400B3DBB4 /* Intercepter */ = {
+			isa = PBXGroup;
+			children = (
+				A77D548122251DFE00B3DBB4 /* LCViewControllerIntercepter.h */,
+				A77D548222251DFE00B3DBB4 /* LCViewControllerIntercepter.m */,
+				A77D548422251E2D00B3DBB4 /* LCNavigationControllerIntercepter.h */,
+				A77D548522251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m */,
+			);
+			path = Intercepter;
+			sourceTree = "<group>";
+		};
+		A7CAC9132223C23E0016C4A8 /* LCBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				A7CAC9142223C25C0016C4A8 /* LCBannerView.h */,
+				A7CAC9152223C25C0016C4A8 /* LCBannerView.m */,
+			);
+			path = LCBannerView;
+			sourceTree = "<group>";
+		};
+		A7CAC9172223C8CE0016C4A8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A7CAC92A2223C97E0016C4A8 /* CAGradientLayer+LCAdd.h */,
+				A7CAC92B2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m */,
+				A7CAC9302223C9950016C4A8 /* LCAdd.h */,
+				A7CAC92D2223C98B0016C4A8 /* NSDate+LCAdd.h */,
+				A7CAC92E2223C98B0016C4A8 /* NSDate+LCAdd.m */,
+				A7CAC9182223C8FD0016C4A8 /* NSString+LCAdd.h */,
+				A7CAC9192223C8FD0016C4A8 /* NSString+LCAdd.m */,
+				A7CAC9272223C9650016C4A8 /* UIButton+LCAdd.h */,
+				A7CAC9282223C9650016C4A8 /* UIButton+LCAdd.m */,
+				A7CAC91B2223C9120016C4A8 /* UIImage+LCAdd.h */,
+				A7CAC91C2223C9120016C4A8 /* UIImage+LCAdd.m */,
+				A7CAC91E2223C93D0016C4A8 /* UIResponder+LCAdd.h */,
+				A7CAC91F2223C93D0016C4A8 /* UIResponder+LCAdd.m */,
+				A7CAC9242223C9590016C4A8 /* UIView+LCAdd.h */,
+				A7CAC9252223C9590016C4A8 /* UIView+LCAdd.m */,
+				A7CAC9212223C94D0016C4A8 /* UIViewController+LCAdd.h */,
+				A7CAC9222223C94D0016C4A8 /* UIViewController+LCAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A7CAC9322223D0A50016C4A8 /* LCSortView */ = {
+			isa = PBXGroup;
+			children = (
+				A7CAC9362223D3540016C4A8 /* LCSortDataModel.h */,
+				A7CAC9372223D3540016C4A8 /* LCSortDataModel.m */,
+				A7CAC9332223D0B80016C4A8 /* LCSortView.h */,
+				A7CAC9342223D0B80016C4A8 /* LCSortView.m */,
+			);
+			path = LCSortView;
+			sourceTree = "<group>";
+		};
+		A7EA78CC221E6BF300BFFCFF /* LCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A7EA78CD221E6C1000BFFCFF /* LCAlertView.h */,
+				A7EA78CE221E6C1000BFFCFF /* LCAlertView.m */,
+			);
+			path = LCAlertView;
+			sourceTree = "<group>";
+		};
 		A7EFDDBA221E382C00A73A4B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A7EFDDBB221E382C00A73A4B /* New Group */,
+				A7EFDDBB221E382C00A73A4B /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		A7EFDDBB221E382C00A73A4B /* New Group */ = {
+		A7EFDDBB221E382C00A73A4B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A77D54622224DAEC00B3DBB4 /* HomeViewController.h */,
+				A77D54632224DAEC00B3DBB4 /* HomeViewController.m */,
 			);
-			path = "New Group";
+			path = Home;
 			sourceTree = "<group>";
 		};
 		B7370B9DF5B7BA12E05F6582 /* Pods */ = {
@@ -338,11 +479,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CAC9232223C94D0016C4A8 /* UIViewController+LCAdd.m in Sources */,
+				A7CAC9262223C9590016C4A8 /* UIView+LCAdd.m in Sources */,
+				A77D548622251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m in Sources */,
+				A77D545E2224D65200B3DBB4 /* MainTabBarController.m in Sources */,
+				A77D54642224DAEC00B3DBB4 /* HomeViewController.m in Sources */,
+				A7CAC92C2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m in Sources */,
+				A7CAC9382223D3540016C4A8 /* LCSortDataModel.m in Sources */,
 				A76E040220E3CE45006346F5 /* AppDelegate+AppService.m in Sources */,
+				A7CAC9292223C9650016C4A8 /* UIButton+LCAdd.m in Sources */,
 				A76EFC1220E278E7006346F5 /* main.m in Sources */,
 				A0830D5820EF087300B5D9F7 /* LCGuideView.m in Sources */,
 				A76EFC0220E27859006346F5 /* AppDelegate.m in Sources */,
+				A7CAC9162223C25C0016C4A8 /* LCBannerView.m in Sources */,
+				A7CAC9352223D0B80016C4A8 /* LCSortView.m in Sources */,
+				A77D548322251DFE00B3DBB4 /* LCViewControllerIntercepter.m in Sources */,
+				A7CAC91D2223C9120016C4A8 /* UIImage+LCAdd.m in Sources */,
+				A77D54612224D66C00B3DBB4 /* RootNavigationController.m in Sources */,
+				A7EA78CF221E6C1000BFFCFF /* LCAlertView.m in Sources */,
+				A7CAC91A2223C8FD0016C4A8 /* NSString+LCAdd.m in Sources */,
 				A76EFC0E20E278E7006346F5 /* ViewController.m in Sources */,
+				A7CAC9202223C93D0016C4A8 /* UIResponder+LCAdd.m in Sources */,
+				A7CAC92F2223C98B0016C4A8 /* NSDate+LCAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,11 +642,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XBJZDJ96A6;
+				DEVELOPMENT_TEAM = NLX838WW44;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SLCDevelopLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "SLCDevelopLibrary/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,11 +664,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XBJZDJ96A6;
+				DEVELOPMENT_TEAM = NLX838WW44;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SLCDevelopLibrary/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "SLCDevelopLibrary/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

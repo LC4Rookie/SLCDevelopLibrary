@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate+AppService.h"
-#import "ViewController.h"
+#import "MainTabBarController.h"
 #import "LCGuideView.h"
 
 @implementation AppDelegate (AppService)
@@ -17,17 +17,45 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = KWhiteColor;
-    ViewController *viewController = [[ViewController alloc] init];
-    self.window.rootViewController = viewController;
+    MainTabBarController *tabBarController = [[MainTabBarController alloc] init];
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
-    LCGuideView *guideView = [[LCGuideView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight) imageNamesGroup:@[@"1.jpg", @"1.jpg", @"1.jpg", @"1.jpg"]];
-    [self.window addSubview:guideView];
-//    [self addLaunchAnimation];
+    if ([self isFirstLauch]) {
+        LCGuideView *guideView = [[LCGuideView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight) imageNamesGroup:@[@"1.jpg", @"1.jpg", @"1.jpg", @"1.jpg"]];
+        [self.window addSubview:guideView];
+    }
+    [self addLaunchAnimation];
     
     [[UIButton appearance] setExclusiveTouch:YES];
-    //    [[UIButton appearance] setShowsTouchWhenHighlighted:YES];
     if (@available(iOS 11.0, *)){
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
+    //设置全局cell分割线与屏幕等宽
+    [[UITableView appearance] setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [[UITableView appearance] setSeparatorInset:UIEdgeInsetsZero];
+    [[UITableViewCell appearance] setSeparatorInset:UIEdgeInsetsZero];
+    
+    if ([UITableView instancesRespondToSelector:@selector(setLayoutMargins:)]) {
+        [[UITableView appearance] setLayoutMargins:UIEdgeInsetsZero];
+        [[UITableViewCell appearance] setLayoutMargins:UIEdgeInsetsZero];
+        [[UITableViewCell appearance] setPreservesSuperviewLayoutMargins:NO];
+    }
+}
+
+- (BOOL)isFirstLauch {
+    
+    //获取当前版本号
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
+    //获取上次启动应用保存的appVersion
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:@"version"];
+    //版本升级或首次登录
+    if (version == nil || ![version isEqualToString:currentAppVersion]) {
+        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:@"version"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        return YES;
+    }else{
+        return NO;
     }
 }
 
@@ -35,14 +63,9 @@
 - (void)addLaunchAnimation {
     
     UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
-    
-    //UIView *launchView = viewController.view;
     UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
-    
-    //viewController.view.frame = [UIApplication sharedApplication].keyWindow.frame;
     [mainWindow addSubview:viewController.view];
     [self.window bringSubviewToFront:viewController.view];
-    
     //添加广告图
     /*
      UIImageView *imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDHT, 300)];
@@ -51,10 +74,8 @@
      [viewController.view addSubview:imageV];
      */
     [UIView animateWithDuration:0.6f delay:2 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        
         viewController.view.alpha = 0.0f;
         viewController.view.layer.transform = CATransform3DScale(CATransform3DIdentity, 2.0f, 2.0f, 1.0f);
-        
     } completion:^(BOOL finished) {
         [viewController.view removeFromSuperview];
     }];

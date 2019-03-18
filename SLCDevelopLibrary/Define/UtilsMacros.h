@@ -27,7 +27,7 @@
 //控件tag(0~100为苹果预留字段，去较大值自用防止根据tag去控件出现其他控件)
 #define KControlTag 10000
 //获取控件原始tag
-#define KOriginalTag(tag) (tag % KControlTag)
+#define KOriginalTag(tag) (tag - KControlTag)
 
 //拼接字符串
 #define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]

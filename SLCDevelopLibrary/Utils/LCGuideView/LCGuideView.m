@@ -57,23 +57,35 @@
 
 - (void)layoutPageSubviews {
     
-    self.scrollView.sd_layout
-    .leftSpaceToView(self, 0)
-    .rightSpaceToView(self, 0)
-    .topSpaceToView(self, 0)
-    .bottomSpaceToView(self, 0);
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
     
-    self.page.sd_layout
-    .leftSpaceToView(self, 0)
-    .rightSpaceToView(self, 0)
-    .bottomSpaceToView(self, 50)
-    .heightIs(30);
+    [self.page mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.bottom.mas_equalTo(50);
+        make.height.mas_equalTo(30);
+    }];
 }
 
 #pragma mark - scrollView Delegate
-/** 修改page的显示 */
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    
+    int cuttentIndex = (int)(scrollView.contentOffset.x + KScreenWidth / 2) / KScreenWidth;
+    //如果是最后一页左滑
+    if (cuttentIndex == self.page.numberOfPages - 1) {
+        BOOL isScrollToLeft = [self isScrollToLeft:scrollView];
+        BOOL isHiddenEnterButton = self.isShowEnterButton == NO;
+        BOOL isHideGuideView = isScrollToLeft && isHiddenEnterButton;
+        if (isHideGuideView) {
+            [self hideGuideView];
+        }
+    }
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
+    //修改page的显示
     if (scrollView == self.scrollView) {
         int cuttentIndex = (int)(scrollView.contentOffset.x + KScreenWidth / 2) / KScreenWidth;
         self.page.currentPage = cuttentIndex;
@@ -96,6 +108,28 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self removeFromSuperview];
         });
+    }];
+}
+
+/** 是否向左滑动 */
+- (BOOL)isScrollToLeft:(UIScrollView *)scrollView {
+    
+    if ([scrollView.panGestureRecognizer translationInView:scrollView.superview].x < 0) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+- (void)layoutEnterButton:(UIImageView *)imageView {
+    
+    [imageView addSubview:self.enterButton];
+    imageView.userInteractionEnabled = YES;
+    [self.enterButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(imageView);
+        make.bottom.mas_equalTo(50);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(30);
     }];
 }
 
@@ -163,13 +197,7 @@
         imageView.image = [UIImage imageNamed:[localImageNameArray objectAtIndex:i]];
         [self.scrollView addSubview:imageView];
         if (i == localImageNameArray.count - 1) {
-            [imageView addSubview:self.enterButton];
-            imageView.userInteractionEnabled = YES;
-            self.enterButton.sd_layout
-            .centerXEqualToView(imageView)
-            .centerYEqualToView(imageView)
-            .widthIs(100)
-            .heightIs(30);
+            [self layoutEnterButton:imageView];
         }
     }
 }
@@ -184,13 +212,7 @@
         [imageView sd_setImageWithURL:[NSURL URLWithString:[imageUrlStringsArray objectAtIndex:i]] placeholderImage:self.placeholderImage];
         [self.scrollView addSubview:imageView];
         if (i == imageUrlStringsArray.count - 1) {
-            [imageView addSubview:self.enterButton];
-            imageView.userInteractionEnabled = YES;
-            self.enterButton.sd_layout
-            .centerXEqualToView(imageView)
-            .centerYEqualToView(imageView)
-            .widthIs(100)
-            .heightIs(30);
+            [self layoutEnterButton:imageView];
         }
     }
 }

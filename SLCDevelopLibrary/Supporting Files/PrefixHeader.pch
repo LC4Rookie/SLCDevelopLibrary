@@ -9,9 +9,14 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 #import "UtilsMacros.h"
 #import "URLMacros.h"
 #import "CommonMacros.h"
-#import "SDAutoLayout.h"
+#import "Masonry.h"
+#import "LCAdd.h"
+#import "LCAlertView.h"
 
 #endif /* PrefixHeader_pch */

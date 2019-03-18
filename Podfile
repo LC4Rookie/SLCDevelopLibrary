@@ -9,7 +9,7 @@ target 'SLCDevelopLibrary' do
 
   # Pods for SLCDevelopLibrary
 pod 'SDCycleScrollView'
-pod 'SDAutoLayout'
+pod 'Aspects'
 pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'Masonry'
