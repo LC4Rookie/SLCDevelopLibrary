@@ -16,5 +16,6 @@
 #import "UIButton+LCAdd.h"
 #import "UIViewController+LCAdd.h"
 #import "CAGradientLayer+LCAdd.h"
+#import "UIResponder+LCAdd.h"
 
 #endif /* LCAdd_h */

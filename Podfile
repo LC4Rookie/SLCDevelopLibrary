@@ -14,5 +14,6 @@ pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'Masonry'
 pod 'TZImagePickerController'
+pod 'FSCalendar'
 
 end

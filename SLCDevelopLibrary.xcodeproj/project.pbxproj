@@ -11,8 +11,20 @@
 		A0830D5820EF087300B5D9F7 /* LCGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0830D5720EF087300B5D9F7 /* LCGuideView.m */; };
 		A0830D5A20EF417700B5D9F7 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0830D5920EF417700B5D9F7 /* libSDWebImage.a */; };
 		A0830D5E20EF417F00B5D9F7 /* libSDCycleScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0830D5D20EF417F00B5D9F7 /* libSDCycleScrollView.a */; };
-		A0830D6020EF50D600B5D9F7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0830D5F20EF50D600B5D9F7 /* 1.jpg */; };
-		A76E040220E3CE45006346F5 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = A76E040120E3CE45006346F5 /* AppDelegate+AppService.m */; };
+		A7141E5522408BE500D67ECB /* LCPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E5422408BE500D67ECB /* LCPickerView.m */; };
+		A7141E59224096D000D67ECB /* LCPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E58224096D000D67ECB /* LCPhotoView.m */; };
+		A7141E5C224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E5B224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m */; };
+		A7141E5F2240970C00D67ECB /* LCCheckPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E5E2240970C00D67ECB /* LCCheckPhotoView.m */; };
+		A7141E622240974300D67ECB /* LCPhotoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E612240974300D67ECB /* LCPhotoDataModel.m */; };
+		A7141E652240B12B00D67ECB /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E642240B12B00D67ECB /* AppDelegate+AppService.m */; };
+		A7141E6F2240B5DE00D67ECB /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E692240B5DE00D67ECB /* SDPhotoBrowser.m */; };
+		A7141E702240B5DE00D67ECB /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E6A2240B5DE00D67ECB /* SDWaitingView.m */; };
+		A7141E712240B5DE00D67ECB /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E6B2240B5DE00D67ECB /* SDBrowserImageView.m */; };
+		A7141E762240CCCD00D67ECB /* LCCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7141E752240CCCD00D67ECB /* LCCalendarViewController.m */; };
+		A7141E792240CDA700D67ECB /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7141E782240CDA700D67ECB /* 1.jpg */; };
+		A71BFB1B223F2FE400C2C87E /* LCApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB1A223F2FE400C2C87E /* LCApiProxy.m */; };
+		A71BFB1E223F346900C2C87E /* LCAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB1D223F346900C2C87E /* LCAPIBaseManager.m */; };
+		A71BFB22223F3C9300C2C87E /* LCNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB21223F3C9300C2C87E /* LCNumberView.m */; };
 		A76EFC0220E27859006346F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EFC0120E27859006346F5 /* AppDelegate.m */; };
 		A76EFC0E20E278E7006346F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EFC0520E278E6006346F5 /* ViewController.m */; };
 		A76EFC0F20E278E7006346F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EFC0720E278E6006346F5 /* LaunchScreen.storyboard */; };
@@ -45,11 +57,36 @@
 		A0830D5920EF417700B5D9F7 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0830D5B20EF417B00B5D9F7 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0830D5D20EF417F00B5D9F7 /* libSDCycleScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDCycleScrollView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0830D5F20EF50D600B5D9F7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A7141E5322408BE500D67ECB /* LCPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPickerView.h; sourceTree = "<group>"; };
+		A7141E5422408BE500D67ECB /* LCPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPickerView.m; sourceTree = "<group>"; };
+		A7141E57224096D000D67ECB /* LCPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPhotoView.h; sourceTree = "<group>"; };
+		A7141E58224096D000D67ECB /* LCPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPhotoView.m; sourceTree = "<group>"; };
+		A7141E5A224096F300D67ECB /* LCPhotoInfoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPhotoInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		A7141E5B224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPhotoInfoCollectionViewCell.m; sourceTree = "<group>"; };
+		A7141E5D2240970C00D67ECB /* LCCheckPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCheckPhotoView.h; sourceTree = "<group>"; };
+		A7141E5E2240970C00D67ECB /* LCCheckPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCheckPhotoView.m; sourceTree = "<group>"; };
+		A7141E602240974300D67ECB /* LCPhotoDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCPhotoDataModel.h; sourceTree = "<group>"; };
+		A7141E612240974300D67ECB /* LCPhotoDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCPhotoDataModel.m; sourceTree = "<group>"; };
+		A7141E632240B12B00D67ECB /* AppDelegate+AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		A7141E642240B12B00D67ECB /* AppDelegate+AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		A7141E682240B5DE00D67ECB /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		A7141E692240B5DE00D67ECB /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		A7141E6A2240B5DE00D67ECB /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		A7141E6B2240B5DE00D67ECB /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		A7141E6C2240B5DE00D67ECB /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		A7141E6D2240B5DE00D67ECB /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		A7141E6E2240B5DE00D67ECB /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		A7141E742240CCCD00D67ECB /* LCCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCCalendarViewController.h; sourceTree = "<group>"; };
+		A7141E752240CCCD00D67ECB /* LCCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCalendarViewController.m; sourceTree = "<group>"; };
+		A7141E782240CDA700D67ECB /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A71BFB19223F2FE400C2C87E /* LCApiProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCApiProxy.h; sourceTree = "<group>"; };
+		A71BFB1A223F2FE400C2C87E /* LCApiProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCApiProxy.m; sourceTree = "<group>"; };
+		A71BFB1C223F346900C2C87E /* LCAPIBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAPIBaseManager.h; sourceTree = "<group>"; };
+		A71BFB1D223F346900C2C87E /* LCAPIBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAPIBaseManager.m; sourceTree = "<group>"; };
+		A71BFB20223F3C9300C2C87E /* LCNumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNumberView.h; sourceTree = "<group>"; };
+		A71BFB21223F3C9300C2C87E /* LCNumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNumberView.m; sourceTree = "<group>"; };
 		A76E03FE20E3C903006346F5 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		A76E03FF20E3C914006346F5 /* URLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
-		A76E040020E3CE45006346F5 /* AppDelegate+AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
-		A76E040120E3CE45006346F5 /* AppDelegate+AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
 		A76EFBDF20E26C1B006346F5 /* SLCDevelopLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCDevelopLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76EFC0020E27859006346F5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A76EFC0120E27859006346F5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +161,97 @@
 			path = LCGuideView;
 			sourceTree = "<group>";
 		};
+		A7141E5222408BCF00D67ECB /* LCPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E5322408BE500D67ECB /* LCPickerView.h */,
+				A7141E5422408BE500D67ECB /* LCPickerView.m */,
+			);
+			path = LCPickerView;
+			sourceTree = "<group>";
+		};
+		A7141E56224096B400D67ECB /* LCPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E602240974300D67ECB /* LCPhotoDataModel.h */,
+				A7141E612240974300D67ECB /* LCPhotoDataModel.m */,
+				A7141E57224096D000D67ECB /* LCPhotoView.h */,
+				A7141E58224096D000D67ECB /* LCPhotoView.m */,
+				A7141E5A224096F300D67ECB /* LCPhotoInfoCollectionViewCell.h */,
+				A7141E5B224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m */,
+				A7141E5D2240970C00D67ECB /* LCCheckPhotoView.h */,
+				A7141E5E2240970C00D67ECB /* LCCheckPhotoView.m */,
+			);
+			path = LCPhotoView;
+			sourceTree = "<group>";
+		};
+		A7141E662240B5BC00D67ECB /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E672240B5DE00D67ECB /* SDPhotoBrowser */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		A7141E672240B5DE00D67ECB /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E6E2240B5DE00D67ECB /* SDBrowserImageView.h */,
+				A7141E6B2240B5DE00D67ECB /* SDBrowserImageView.m */,
+				A7141E6D2240B5DE00D67ECB /* SDPhotoBrowser.h */,
+				A7141E692240B5DE00D67ECB /* SDPhotoBrowser.m */,
+				A7141E682240B5DE00D67ECB /* SDPhotoBrowserConfig.h */,
+				A7141E6C2240B5DE00D67ECB /* SDWaitingView.h */,
+				A7141E6A2240B5DE00D67ECB /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		A7141E722240CC9700D67ECB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E732240CC9B00D67ECB /* LCCalendarManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A7141E732240CC9B00D67ECB /* LCCalendarManager */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E742240CCCD00D67ECB /* LCCalendarViewController.h */,
+				A7141E752240CCCD00D67ECB /* LCCalendarViewController.m */,
+			);
+			path = LCCalendarManager;
+			sourceTree = "<group>";
+		};
+		A7141E772240CD8800D67ECB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A7141E782240CDA700D67ECB /* 1.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A71BFB18223F2FBB00C2C87E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A71BFB19223F2FE400C2C87E /* LCApiProxy.h */,
+				A71BFB1A223F2FE400C2C87E /* LCApiProxy.m */,
+				A71BFB1C223F346900C2C87E /* LCAPIBaseManager.h */,
+				A71BFB1D223F346900C2C87E /* LCAPIBaseManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A71BFB1F223F3C7800C2C87E /* LCNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				A71BFB20223F3C9300C2C87E /* LCNumberView.h */,
+				A71BFB21223F3C9300C2C87E /* LCNumberView.m */,
+			);
+			path = LCNumberView;
+			sourceTree = "<group>";
+		};
 		A76EFBD620E26C1B006346F5 = {
 			isa = PBXGroup;
 			children = (
@@ -145,14 +273,14 @@
 		A76EFBE120E26C1B006346F5 /* SLCDevelopLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A77D54592224D5D000B3DBB4 /* Base */,
-				A7EFDDBA221E382C00A73A4B /* Modules */,
-				A76EFBFF20E27839006346F5 /* Manager */,
-				A76EFBFD20E277B9006346F5 /* ThirdLibrary */,
-				A76EFBFC20E27794006346F5 /* Resource */,
-				A76EFBFB20E2775D006346F5 /* Define */,
-				A76EFBFA20E2772D006346F5 /* Utils */,
 				A76EFBF820E27712006346F5 /* AppDelegate */,
+				A77D54592224D5D000B3DBB4 /* Base */,
+				A76EFBFB20E2775D006346F5 /* Define */,
+				A7141E722240CC9700D67ECB /* Manager */,
+				A7EFDDBA221E382C00A73A4B /* Modules */,
+				A7141E772240CD8800D67ECB /* Resource */,
+				A7141E662240B5BC00D67ECB /* ThirdLibrary */,
+				A76EFBFA20E2772D006346F5 /* Utils */,
 				A76EFC0320E27892006346F5 /* Supporting Files */,
 			);
 			path = SLCDevelopLibrary;
@@ -163,8 +291,8 @@
 			children = (
 				A76EFC0020E27859006346F5 /* AppDelegate.h */,
 				A76EFC0120E27859006346F5 /* AppDelegate.m */,
-				A76E040020E3CE45006346F5 /* AppDelegate+AppService.h */,
-				A76E040120E3CE45006346F5 /* AppDelegate+AppService.m */,
+				A7141E632240B12B00D67ECB /* AppDelegate+AppService.h */,
+				A7141E642240B12B00D67ECB /* AppDelegate+AppService.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -172,6 +300,10 @@
 		A76EFBFA20E2772D006346F5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A7141E56224096B400D67ECB /* LCPhotoView */,
+				A7141E5222408BCF00D67ECB /* LCPickerView */,
+				A71BFB1F223F3C7800C2C87E /* LCNumberView */,
+				A71BFB18223F2FBB00C2C87E /* Network */,
 				A77D548022251DE400B3DBB4 /* Intercepter */,
 				A7CAC9322223D0A50016C4A8 /* LCSortView */,
 				A7CAC9172223C8CE0016C4A8 /* Category */,
@@ -192,31 +324,9 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		A76EFBFC20E27794006346F5 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		A76EFBFD20E277B9006346F5 /* ThirdLibrary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdLibrary;
-			sourceTree = "<group>";
-		};
-		A76EFBFF20E27839006346F5 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		A76EFC0320E27892006346F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A0830D5F20EF50D600B5D9F7 /* 1.jpg */,
 				A76EFC0D20E278E6006346F5 /* Assets.xcassets */,
 				A76EFC0620E278E6006346F5 /* Base.lproj */,
 				A76EFC0B20E278E6006346F5 /* Info.plist */,
@@ -425,7 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76EFC1020E278E7006346F5 /* Main.storyboard in Resources */,
-				A0830D6020EF50D600B5D9F7 /* 1.jpg in Resources */,
+				A7141E792240CDA700D67ECB /* 1.jpg in Resources */,
 				A76EFC0F20E278E7006346F5 /* LaunchScreen.storyboard in Resources */,
 				A76EFC1320E278E7006346F5 /* Assets.xcassets in Resources */,
 			);
@@ -479,14 +589,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71BFB1B223F2FE400C2C87E /* LCApiProxy.m in Sources */,
+				A7141E622240974300D67ECB /* LCPhotoDataModel.m in Sources */,
 				A7CAC9232223C94D0016C4A8 /* UIViewController+LCAdd.m in Sources */,
+				A7141E5F2240970C00D67ECB /* LCCheckPhotoView.m in Sources */,
+				A7141E5C224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m in Sources */,
+				A7141E6F2240B5DE00D67ECB /* SDPhotoBrowser.m in Sources */,
+				A7141E712240B5DE00D67ECB /* SDBrowserImageView.m in Sources */,
 				A7CAC9262223C9590016C4A8 /* UIView+LCAdd.m in Sources */,
 				A77D548622251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m in Sources */,
+				A71BFB1E223F346900C2C87E /* LCAPIBaseManager.m in Sources */,
+				A7141E5522408BE500D67ECB /* LCPickerView.m in Sources */,
+				A71BFB22223F3C9300C2C87E /* LCNumberView.m in Sources */,
 				A77D545E2224D65200B3DBB4 /* MainTabBarController.m in Sources */,
 				A77D54642224DAEC00B3DBB4 /* HomeViewController.m in Sources */,
 				A7CAC92C2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m in Sources */,
 				A7CAC9382223D3540016C4A8 /* LCSortDataModel.m in Sources */,
-				A76E040220E3CE45006346F5 /* AppDelegate+AppService.m in Sources */,
+				A7141E702240B5DE00D67ECB /* SDWaitingView.m in Sources */,
 				A7CAC9292223C9650016C4A8 /* UIButton+LCAdd.m in Sources */,
 				A76EFC1220E278E7006346F5 /* main.m in Sources */,
 				A0830D5820EF087300B5D9F7 /* LCGuideView.m in Sources */,
@@ -495,6 +614,9 @@
 				A7CAC9352223D0B80016C4A8 /* LCSortView.m in Sources */,
 				A77D548322251DFE00B3DBB4 /* LCViewControllerIntercepter.m in Sources */,
 				A7CAC91D2223C9120016C4A8 /* UIImage+LCAdd.m in Sources */,
+				A7141E652240B12B00D67ECB /* AppDelegate+AppService.m in Sources */,
+				A7141E59224096D000D67ECB /* LCPhotoView.m in Sources */,
+				A7141E762240CCCD00D67ECB /* LCCalendarViewController.m in Sources */,
 				A77D54612224D66C00B3DBB4 /* RootNavigationController.m in Sources */,
 				A7EA78CF221E6C1000BFFCFF /* LCAlertView.m in Sources */,
 				A7CAC91A2223C8FD0016C4A8 /* NSString+LCAdd.m in Sources */,

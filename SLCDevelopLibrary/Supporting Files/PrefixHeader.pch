@@ -12,6 +12,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "AppDelegate.h"
+#import "AppDelegate+AppService.h"
+
 #import "UtilsMacros.h"
 #import "URLMacros.h"
 #import "CommonMacros.h"

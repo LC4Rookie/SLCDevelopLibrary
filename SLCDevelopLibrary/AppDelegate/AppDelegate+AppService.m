@@ -2,8 +2,8 @@
 //  AppDelegate+AppService.m
 //  SLCDevelopLibrary
 //
-//  Created by 宋林城 on 2018/6/27.
-//  Copyright © 2018年 宋林城. All rights reserved.
+//  Created by LCSong on 2019/3/19.
+//  Copyright © 2019 宋林城. All rights reserved.
 //
 
 #import "AppDelegate+AppService.h"
@@ -11,6 +11,11 @@
 #import "LCGuideView.h"
 
 @implementation AppDelegate (AppService)
+
++ (AppDelegate *)shareAppDelegate {
+    
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+}
 
 /** 初始化 window */
 - (void)initWindow {
@@ -82,4 +87,48 @@
     
 }
 
+/** 当前顶层控制器 */
+- (UIViewController *)getCurrentVC {
+    
+    UIViewController *result = nil;
+    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
+    if (window.subviews.count == 0) {
+        return window.rootViewController;
+    }
+    if (window.windowLevel != UIWindowLevelNormal) {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for(UIWindow * tmpWin in windows) {
+            if (tmpWin.windowLevel == UIWindowLevelNormal) {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    UIView *frontView = [[window subviews] objectAtIndex:0];
+    id nextResponder = [frontView nextResponder];
+    if ([nextResponder isKindOfClass:[UIViewController class]]) {
+        result = nextResponder;
+    }else {
+        result = window.rootViewController;
+    }
+    return result;
+}
+
+/** 当前顶层UI控制器 */
+- (UIViewController *)getCurrentUIVC {
+    
+    UIViewController *superVC = [self getCurrentVC];
+    
+    if ([superVC isKindOfClass:[UITabBarController class]]) {
+        UIViewController  *tabSelectVC = ((UITabBarController*)superVC).selectedViewController;
+        if ([tabSelectVC isKindOfClass:[UINavigationController class]]) {
+            return ((UINavigationController*)tabSelectVC).viewControllers.lastObject;
+        }
+        return tabSelectVC;
+    }else
+        if ([superVC isKindOfClass:[UINavigationController class]]) {
+            return ((UINavigationController*)superVC).viewControllers.lastObject;
+        }
+    return superVC;
+}
 @end

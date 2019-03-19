@@ -9,6 +9,12 @@
 #ifndef UtilsMacros_h
 #define UtilsMacros_h
 
+
+#define kAppDelegate [AppDelegate shareAppDelegate]
+
+//偏好设置
+#define NSUSERDEFAULTS [NSUserDefaults standardUserDefaults]
+
 //获取屏幕宽高
 #define KScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define KScreenHeight [[UIScreen mainScreen] bounds].size.height
@@ -21,8 +27,6 @@
 //整个导航栏高度
 #define KNavTopHeight (KStatusBarHeight + KNavBarHeight)
 #define KSafeAreaBottomHeight (KStatusBarHeight > 20 ? 34 : 0)
-//偏好设置
-#define NSUSERDEFAULTS [NSUserDefaults standardUserDefaults]
 
 //控件tag(0~100为苹果预留字段，去较大值自用防止根据tag去控件出现其他控件)
 #define KControlTag 10000
