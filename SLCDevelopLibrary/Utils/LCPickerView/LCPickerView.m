@@ -11,7 +11,7 @@
 @interface LCPickerView ()<UIPickerViewDelegate, UIPickerViewDataSource, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIView *coverView;
-@property (nonatomic, strong) UIView *titleView;
+@property (nonatomic, strong) UIView *topView;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIButton *cancelButton;
 @property (nonatomic, strong) UIButton *confirmButton;
@@ -35,6 +35,11 @@
         [self setBackgroundColor:RGBA(0, 0, 0, 0.5)];
         
         self.viewType = type;
+        self.topViewBackgroundColor = KAppShallowGrayColor;
+        self.cancelTitle = @"取消";
+        self.confirmTitle = @"确定";
+        self.cancelTextColor = KAppBlueColor;
+        self.confirmTextColor = KAppBlueColor;
         
         UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
         singleTapGesture.numberOfTapsRequired = 1;
@@ -43,10 +48,10 @@
         [self addGestureRecognizer:singleTapGesture];
         
         [self addSubview:self.coverView];
-        [self.coverView addSubview:self.titleView];
-        [self.titleView addSubview:self.titleLabel];
-        [self.titleView addSubview:self.cancelButton];
-        [self.titleView addSubview:self.confirmButton];
+        [self.coverView addSubview:self.topView];
+        [self.topView addSubview:self.titleLabel];
+        [self.topView addSubview:self.cancelButton];
+        [self.topView addSubview:self.confirmButton];
         if (self.viewType == LCPickerViewTypeData) {
             [self.coverView addSubview:self.pickerView];
         }else {
@@ -65,21 +70,21 @@
         make.height.mas_equalTo(260);
     }];
     
-    [self.titleView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.coverView);
         make.height.mas_equalTo(40);
     }];
     
     [self.cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.titleView).offset(5);
-        make.centerY.equalTo(self.titleView);
+        make.left.equalTo(self.topView).offset(5);
+        make.centerY.equalTo(self.topView);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(35);
     }];
     
     [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.titleView).offset(-5);
-        make.centerY.equalTo(self.titleView);
+        make.right.equalTo(self.topView).offset(-5);
+        make.centerY.equalTo(self.topView);
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(35);
     }];
@@ -87,7 +92,7 @@
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.confirmButton.mas_left).offset(-10);
         make.left.equalTo(self.cancelButton.mas_right).offset(10);
-        make.centerY.equalTo(self.titleView);
+        make.centerY.equalTo(self.topView);
         make.height.mas_equalTo(30);
     }];
     
@@ -203,21 +208,18 @@
     return _coverView;
 }
 
-- (UIView *)titleView {
+- (UIView *)topView {
     
-    if (!_titleView) {
-        _titleView = [[UIView alloc] init];
-        _titleView.backgroundColor = KGray2Color;
+    if (!_topView) {
+        _topView = [[UIView alloc] init];
     }
-    return _titleView;
+    return _topView;
 }
 
 - (UIButton *)confirmButton {
     
     if (!_confirmButton) {
         _confirmButton = [[UIButton alloc] init];
-        [_confirmButton setTitle:@"确定" forState:UIControlStateNormal];
-        [_confirmButton setTitleColor:KBlueColor forState:UIControlStateNormal];
         [_confirmButton addTarget:self action:@selector(confirmButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _confirmButton;
@@ -227,8 +229,6 @@
     
     if (!_cancelButton) {
         _cancelButton = [[UIButton alloc] init];
-        [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-        [_cancelButton setTitleColor:KBlueColor forState:UIControlStateNormal];
         [_cancelButton addTarget:self action:@selector(cancelButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _cancelButton;
@@ -270,6 +270,38 @@
     
     _title = title;
     self.titleLabel.text = title;
+}
+
+- (void)setTopViewBackgroundColor:(UIColor *)topViewBackgroundColor {
+    
+    _topViewBackgroundColor = topViewBackgroundColor;
+    self.topView.backgroundColor = topViewBackgroundColor;
+}
+
+- (void)setCancelTitle:(NSString *)cancelTitle {
+    
+    _cancelTitle = cancelTitle;
+    self.cancelButton.hidden = kStringIsEmpty(cancelTitle);
+    [self.cancelButton setTitle:cancelTitle forState:UIControlStateNormal];
+}
+
+- (void)setConfirmTitle:(NSString *)confirmTitle {
+    
+    _confirmTitle = confirmTitle;
+    self.confirmButton.hidden = kStringIsEmpty(confirmTitle);
+    [self.confirmButton setTitle:confirmTitle forState:UIControlStateNormal];
+}
+
+- (void)setCancelTextColor:(UIColor *)cancelTextColor {
+    
+    _cancelTextColor = cancelTextColor;
+    [self.cancelButton setTitleColor:cancelTextColor forState:UIControlStateNormal];
+}
+
+- (void)setConfirmTextColor:(UIColor *)confirmTextColor {
+    
+    _confirmTextColor = confirmTextColor;
+    [self.confirmButton setTitleColor:confirmTextColor forState:UIControlStateNormal];
 }
 
 - (void)setKey:(NSString *)key {

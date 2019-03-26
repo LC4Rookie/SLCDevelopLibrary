@@ -57,9 +57,9 @@
 - (void)setUpAllChildViewController {
     
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
-    [self setupChildViewController:homeViewController title:@"首页" imageName:@"icon_C_tabbar_home_normal" seleceImageName:@"icon_C_tabbar_home_select"];
+    [self setupChildViewController:homeViewController title:@"首页" imageName:@"icon_mainNormal" seleceImageName:@"icon_mainSelect"];
     HomeViewController *homeViewController1 = [[HomeViewController alloc] init];
-    [self setupChildViewController:homeViewController1 title:@"首页" imageName:@"icon_C_tabbar_home_normal" seleceImageName:@"icon_C_tabbar_home_select"];
+    [self setupChildViewController:homeViewController1 title:@"首页" imageName:@"icon_mainNormal" seleceImageName:@"icon_mainSelect"];
 }
 
 - (void)setupChildViewController:(UIViewController*)controller title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName {
@@ -70,7 +70,7 @@
     //未选中字体颜色
     [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:KGrayColor,NSFontAttributeName:SYSTEMFONT(10.0f)} forState:UIControlStateNormal];
     //选中字体颜色
-    [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:KBlueColor,NSFontAttributeName:SYSTEMFONT(10.0f)} forState:UIControlStateSelected];
+    [controller.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:KBlackColor,NSFontAttributeName:SYSTEMFONT(10.0f)} forState:UIControlStateSelected];
     //包装导航控制器
     RootNavigationController *nav = [[RootNavigationController alloc] initWithRootViewController:controller];
     [self addChildViewController:nav];

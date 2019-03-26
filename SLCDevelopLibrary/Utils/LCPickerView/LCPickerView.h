@@ -28,10 +28,22 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LCPickerView : UIView
 
 @property (nonatomic, weak) id<LCPickerViewDelegate> delegate;
-@property (nonatomic, strong) NSString *title;
+/** 标题 */
+@property (nonatomic, copy) NSString *title;
+/** 顶部view背景 （标题+取消按钮+确认按钮 父视图） */
+@property (nonatomic, strong) UIColor *topViewBackgroundColor;
+/** 取消按钮标题 默认“取消” 传空值隐藏 */
+@property (nonatomic, copy) NSString *cancelTitle;
+/** 确认按钮标题 默认“确定” 传空值隐藏 */
+@property (nonatomic, copy) NSString *confirmTitle;
+/** 取消按钮文字颜色 */
+@property (nonatomic, strong) UIColor *cancelTextColor;
+/** 确认按钮文字颜色 */
+@property (nonatomic, strong) UIColor *confirmTextColor;
 /** 用于取dataArray中字典对应显示 不传代表dataArray直接由字符串组成 */
-@property (nonatomic, strong) NSString *key;
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, copy) NSString *key;
+@property (nonatomic, copy) NSArray *dataArray;
+
 @property (nonatomic) UIDatePickerMode datePickerMode;
 /** 设置日期显示的最大时间 */
 @property (nonatomic, strong) NSDate *maxDate;

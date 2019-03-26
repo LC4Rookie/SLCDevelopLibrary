@@ -37,10 +37,10 @@
     if (self) {
         
         /* 在这里做好方法拦截 */
-        [UIViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectInfo){
+        [UIViewController aspect_hookSelector:@selector(loadView) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo>aspectInfo){
             NSString *className = NSStringFromClass([aspectInfo.instance class]);
             if ([self isValidClass:className]) {
-                [self viewDidLoad:[aspectInfo instance]];
+                [self loadView:[aspectInfo instance]];
             }
         } error:NULL];
         
@@ -64,10 +64,10 @@
 }
 
 #pragma mark - fake methods
-- (void)viewDidLoad:(UIViewController *)viewController {
+- (void)loadView:(UIViewController *)viewController {
     
     viewController.view.backgroundColor = KWhiteColor;
-    [viewController addBackButton:@"icon_B_back"];
+    [viewController addBackButton:@"icon_back"];
     viewController.edgesForExtendedLayout = UIRectEdgeNone;
     viewController.automaticallyAdjustsScrollViewInsets = NO;
 }

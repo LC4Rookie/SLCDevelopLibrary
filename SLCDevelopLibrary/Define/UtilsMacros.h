@@ -36,6 +36,10 @@
 //拼接字符串
 #define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
 
+//app自用颜色
+#define KAppBlueColor UIColorFromHex(0x5d9ffa)
+#define KAppGrayColor UIColorFromHex(0x999999)
+#define KAppShallowGrayColor UIColorFromHex(0xdee1eb)
 //颜色
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define UIColorFromHex(hex) [UIColor colorWithRed:(((hex & 0xFF0000) >> 16)) / 255.0 green:(((hex & 0xFF00) >> 8)) / 255.0 blue:((hex & 0xFF)) / 255.0 alpha:1.0]

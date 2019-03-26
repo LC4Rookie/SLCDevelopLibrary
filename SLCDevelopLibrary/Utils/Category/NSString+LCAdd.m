@@ -55,33 +55,6 @@
     return randomString;
 }
 
-/** 根据原始日期 原始formatter 及当前formatter获取日期字符串 */
-+ (NSString *)currentDateStringByOriginalDateString:(NSString *)dateString
-                                 originalDateFormat:(NSString *)originalDateFormat
-                                  currentDateFormat:(NSString *)currentDateFormat {
-    
-    if ([dateString containsString:@"."]) {
-        originalDateFormat = [NSString stringWithFormat:@"%@.SSS",originalDateFormat];
-    }
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
-    [formatter setDateFormat:originalDateFormat];
-    NSDate *date = [formatter dateFromString:dateString];
-    NSString *time = [NSString dateStringWithDate:date dateFormat:currentDateFormat];
-    return time;
-}
-
-/** 根据日期及formatter获取日期字符串 */
-+ (NSString *)dateStringWithDate:(NSDate *)date dateFormat:(NSString *)dateFormat {
-    
-    NSTimeZone *localTimeZone = [NSTimeZone systemTimeZone];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:localTimeZone];
-    [formatter setDateFormat:dateFormat];
-    NSString *dateString = [formatter stringFromDate:date];
-    return dateString;
-}
-
 /** 根据日期获取工作日（周几） */
 + (NSString *)weekdayForDate:(NSDate *)date {
     

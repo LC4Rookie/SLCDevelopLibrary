@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LCBannerView;
 
 @protocol LCBannerViewDelegate <NSObject>
 
 @optional
-- (void)bannerViewDidSelectAtIndex:(NSInteger)index;
+- (void)bannerView:(LCBannerView *)view didSelectAtIndex:(NSInteger)index;
 
 @end
 

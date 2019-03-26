@@ -25,6 +25,17 @@
 		A71BFB1B223F2FE400C2C87E /* LCApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB1A223F2FE400C2C87E /* LCApiProxy.m */; };
 		A71BFB1E223F346900C2C87E /* LCAPIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB1D223F346900C2C87E /* LCAPIBaseManager.m */; };
 		A71BFB22223F3C9300C2C87E /* LCNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = A71BFB21223F3C9300C2C87E /* LCNumberView.m */; };
+		A73186B42249C33F00A35E69 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186AF2249C33F00A35E69 /* HomeViewController.m */; };
+		A73186BD2249C3BA00A35E69 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186BB2249C3BA00A35E69 /* BannerViewController.m */; };
+		A73186C02249C7CB00A35E69 /* BannerTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186BF2249C7CB00A35E69 /* BannerTypeListViewController.m */; };
+		A73186C42249D07200A35E69 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186C32249D07200A35E69 /* TableViewCell.m */; };
+		A73186C72249D08700A35E69 /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186C62249D08700A35E69 /* HomeCollectionViewCell.m */; };
+		A73186CD2249EBC200A35E69 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186CC2249EBC200A35E69 /* SortViewController.m */; };
+		A73186D02249EBD800A35E69 /* PickerTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186CF2249EBD800A35E69 /* PickerTypeListViewController.m */; };
+		A73186D62249EC1000A35E69 /* PhotoTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186D52249EC1000A35E69 /* PhotoTypeListViewController.m */; };
+		A73186D92249EC1E00A35E69 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186D82249EC1E00A35E69 /* PhotoViewController.m */; };
+		A73186DF224A050800A35E69 /* MBProgressHUD+Simplify.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186DB224A050800A35E69 /* MBProgressHUD+Simplify.m */; };
+		A73186E0224A050800A35E69 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A73186DC224A050800A35E69 /* MBProgressHUD.m */; };
 		A76EFC0220E27859006346F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EFC0120E27859006346F5 /* AppDelegate.m */; };
 		A76EFC0E20E278E7006346F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EFC0520E278E6006346F5 /* ViewController.m */; };
 		A76EFC0F20E278E7006346F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76EFC0720E278E6006346F5 /* LaunchScreen.storyboard */; };
@@ -33,7 +44,6 @@
 		A76EFC1320E278E7006346F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76EFC0D20E278E6006346F5 /* Assets.xcassets */; };
 		A77D545E2224D65200B3DBB4 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D545D2224D65200B3DBB4 /* MainTabBarController.m */; };
 		A77D54612224D66C00B3DBB4 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D54602224D66C00B3DBB4 /* RootNavigationController.m */; };
-		A77D54642224DAEC00B3DBB4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D54632224DAEC00B3DBB4 /* HomeViewController.m */; };
 		A77D548322251DFE00B3DBB4 /* LCViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D548222251DFE00B3DBB4 /* LCViewControllerIntercepter.m */; };
 		A77D548622251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = A77D548522251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m */; };
 		A7CAC9162223C25C0016C4A8 /* LCBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9152223C25C0016C4A8 /* LCBannerView.m */; };
@@ -48,6 +58,9 @@
 		A7CAC9352223D0B80016C4A8 /* LCSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9342223D0B80016C4A8 /* LCSortView.m */; };
 		A7CAC9382223D3540016C4A8 /* LCSortDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CAC9372223D3540016C4A8 /* LCSortDataModel.m */; };
 		A7EA78CF221E6C1000BFFCFF /* LCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EA78CE221E6C1000BFFCFF /* LCAlertView.m */; };
+		A7FE498422487C7800EEE8E1 /* LCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FE498322487C7800EEE8E1 /* LCSearchView.m */; };
+		A7FE498822487FF600EEE8E1 /* LCSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FE498722487FF600EEE8E1 /* LCSegementView.m */; };
+		A7FE498B2248801900EEE8E1 /* LCSegementCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FE498A2248801900EEE8E1 /* LCSegementCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +98,28 @@
 		A71BFB1D223F346900C2C87E /* LCAPIBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAPIBaseManager.m; sourceTree = "<group>"; };
 		A71BFB20223F3C9300C2C87E /* LCNumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNumberView.h; sourceTree = "<group>"; };
 		A71BFB21223F3C9300C2C87E /* LCNumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCNumberView.m; sourceTree = "<group>"; };
+		A73186AF2249C33F00A35E69 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A73186B02249C33F00A35E69 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A73186BB2249C3BA00A35E69 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		A73186BC2249C3BA00A35E69 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		A73186BE2249C7CB00A35E69 /* BannerTypeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerTypeListViewController.h; sourceTree = "<group>"; };
+		A73186BF2249C7CB00A35E69 /* BannerTypeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerTypeListViewController.m; sourceTree = "<group>"; };
+		A73186C22249D07200A35E69 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		A73186C32249D07200A35E69 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		A73186C52249D08700A35E69 /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		A73186C62249D08700A35E69 /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		A73186CB2249EBC200A35E69 /* SortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		A73186CC2249EBC200A35E69 /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
+		A73186CE2249EBD800A35E69 /* PickerTypeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerTypeListViewController.h; sourceTree = "<group>"; };
+		A73186CF2249EBD800A35E69 /* PickerTypeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerTypeListViewController.m; sourceTree = "<group>"; };
+		A73186D42249EC1000A35E69 /* PhotoTypeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoTypeListViewController.h; sourceTree = "<group>"; };
+		A73186D52249EC1000A35E69 /* PhotoTypeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoTypeListViewController.m; sourceTree = "<group>"; };
+		A73186D72249EC1E00A35E69 /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		A73186D82249EC1E00A35E69 /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		A73186DB224A050800A35E69 /* MBProgressHUD+Simplify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Simplify.m"; sourceTree = "<group>"; };
+		A73186DC224A050800A35E69 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A73186DD224A050800A35E69 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A73186DE224A050800A35E69 /* MBProgressHUD+Simplify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Simplify.h"; sourceTree = "<group>"; };
 		A76E03FE20E3C903006346F5 /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		A76E03FF20E3C914006346F5 /* URLMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacros.h; sourceTree = "<group>"; };
 		A76EFBDF20E26C1B006346F5 /* SLCDevelopLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLCDevelopLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,8 +137,6 @@
 		A77D545D2224D65200B3DBB4 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		A77D545F2224D66C00B3DBB4 /* RootNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		A77D54602224D66C00B3DBB4 /* RootNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
-		A77D54622224DAEC00B3DBB4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		A77D54632224DAEC00B3DBB4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A77D548122251DFE00B3DBB4 /* LCViewControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCViewControllerIntercepter.h; sourceTree = "<group>"; };
 		A77D548222251DFE00B3DBB4 /* LCViewControllerIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCViewControllerIntercepter.m; sourceTree = "<group>"; };
 		A77D548422251E2D00B3DBB4 /* LCNavigationControllerIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCNavigationControllerIntercepter.h; sourceTree = "<group>"; };
@@ -134,6 +167,12 @@
 		A7EA78CD221E6C1000BFFCFF /* LCAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAlertView.h; sourceTree = "<group>"; };
 		A7EA78CE221E6C1000BFFCFF /* LCAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAlertView.m; sourceTree = "<group>"; };
 		A7EFDDBC221E399A00A73A4B /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacros.h; sourceTree = "<group>"; };
+		A7FE498222487C7800EEE8E1 /* LCSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSearchView.h; sourceTree = "<group>"; };
+		A7FE498322487C7800EEE8E1 /* LCSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSearchView.m; sourceTree = "<group>"; };
+		A7FE498622487FF600EEE8E1 /* LCSegementView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSegementView.h; sourceTree = "<group>"; };
+		A7FE498722487FF600EEE8E1 /* LCSegementView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSegementView.m; sourceTree = "<group>"; };
+		A7FE49892248801900EEE8E1 /* LCSegementCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCSegementCollectionViewCell.h; sourceTree = "<group>"; };
+		A7FE498A2248801900EEE8E1 /* LCSegementCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCSegementCollectionViewCell.m; sourceTree = "<group>"; };
 		D7F3CA0A8E8FA35B6D2F39BB /* libPods-SLCDevelopLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLCDevelopLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA79342FFEE9198361D6B5E1 /* Pods-SLCDevelopLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLCDevelopLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLCDevelopLibrary/Pods-SLCDevelopLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +227,7 @@
 		A7141E662240B5BC00D67ECB /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				A73186DA224A050800A35E69 /* MBProgressHUD */,
 				A7141E672240B5DE00D67ECB /* SDPhotoBrowser */,
 			);
 			path = ThirdLibrary;
@@ -252,6 +292,86 @@
 			path = LCNumberView;
 			sourceTree = "<group>";
 		};
+		A73186AD2249C32D00A35E69 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A73186AE2249C33F00A35E69 /* Controller */,
+				A73186B12249C33F00A35E69 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A73186AE2249C33F00A35E69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A73186B02249C33F00A35E69 /* HomeViewController.h */,
+				A73186AF2249C33F00A35E69 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A73186B12249C33F00A35E69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A73186C22249D07200A35E69 /* TableViewCell.h */,
+				A73186C32249D07200A35E69 /* TableViewCell.m */,
+				A73186C52249D08700A35E69 /* HomeCollectionViewCell.h */,
+				A73186C62249D08700A35E69 /* HomeCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A73186BA2249C3BA00A35E69 /* BannerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A73186BE2249C7CB00A35E69 /* BannerTypeListViewController.h */,
+				A73186BF2249C7CB00A35E69 /* BannerTypeListViewController.m */,
+				A73186BC2249C3BA00A35E69 /* BannerViewController.h */,
+				A73186BB2249C3BA00A35E69 /* BannerViewController.m */,
+			);
+			path = BannerViewController;
+			sourceTree = "<group>";
+		};
+		A73186C82249EB6400A35E69 /* SortViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A73186CB2249EBC200A35E69 /* SortViewController.h */,
+				A73186CC2249EBC200A35E69 /* SortViewController.m */,
+			);
+			path = SortViewController;
+			sourceTree = "<group>";
+		};
+		A73186C92249EB8700A35E69 /* PickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A73186CE2249EBD800A35E69 /* PickerTypeListViewController.h */,
+				A73186CF2249EBD800A35E69 /* PickerTypeListViewController.m */,
+			);
+			path = PickerViewController;
+			sourceTree = "<group>";
+		};
+		A73186CA2249EB9200A35E69 /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A73186D42249EC1000A35E69 /* PhotoTypeListViewController.h */,
+				A73186D52249EC1000A35E69 /* PhotoTypeListViewController.m */,
+				A73186D72249EC1E00A35E69 /* PhotoViewController.h */,
+				A73186D82249EC1E00A35E69 /* PhotoViewController.m */,
+			);
+			path = PhotoViewController;
+			sourceTree = "<group>";
+		};
+		A73186DA224A050800A35E69 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A73186DD224A050800A35E69 /* MBProgressHUD.h */,
+				A73186DC224A050800A35E69 /* MBProgressHUD.m */,
+				A73186DE224A050800A35E69 /* MBProgressHUD+Simplify.h */,
+				A73186DB224A050800A35E69 /* MBProgressHUD+Simplify.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		A76EFBD620E26C1B006346F5 = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +420,8 @@
 		A76EFBFA20E2772D006346F5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A7FE498522487FD500EEE8E1 /* LCSegementView */,
+				A7FE498122487C5A00EEE8E1 /* LCSearchView */,
 				A7141E56224096B400D67ECB /* LCPhotoView */,
 				A7141E5222408BCF00D67ECB /* LCPickerView */,
 				A71BFB1F223F3C7800C2C87E /* LCNumberView */,
@@ -449,10 +571,33 @@
 		A7EFDDBB221E382C00A73A4B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A77D54622224DAEC00B3DBB4 /* HomeViewController.h */,
-				A77D54632224DAEC00B3DBB4 /* HomeViewController.m */,
+				A73186CA2249EB9200A35E69 /* PhotoViewController */,
+				A73186C92249EB8700A35E69 /* PickerViewController */,
+				A73186C82249EB6400A35E69 /* SortViewController */,
+				A73186BA2249C3BA00A35E69 /* BannerViewController */,
+				A73186AD2249C32D00A35E69 /* Main */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A7FE498122487C5A00EEE8E1 /* LCSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				A7FE498222487C7800EEE8E1 /* LCSearchView.h */,
+				A7FE498322487C7800EEE8E1 /* LCSearchView.m */,
+			);
+			path = LCSearchView;
+			sourceTree = "<group>";
+		};
+		A7FE498522487FD500EEE8E1 /* LCSegementView */ = {
+			isa = PBXGroup;
+			children = (
+				A7FE498622487FF600EEE8E1 /* LCSegementView.h */,
+				A7FE498722487FF600EEE8E1 /* LCSegementView.m */,
+				A7FE49892248801900EEE8E1 /* LCSegementCollectionViewCell.h */,
+				A7FE498A2248801900EEE8E1 /* LCSegementCollectionViewCell.m */,
+			);
+			path = LCSegementView;
 			sourceTree = "<group>";
 		};
 		B7370B9DF5B7BA12E05F6582 /* Pods */ = {
@@ -589,40 +734,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FE498B2248801900EEE8E1 /* LCSegementCollectionViewCell.m in Sources */,
+				A73186C42249D07200A35E69 /* TableViewCell.m in Sources */,
 				A71BFB1B223F2FE400C2C87E /* LCApiProxy.m in Sources */,
 				A7141E622240974300D67ECB /* LCPhotoDataModel.m in Sources */,
+				A73186C02249C7CB00A35E69 /* BannerTypeListViewController.m in Sources */,
 				A7CAC9232223C94D0016C4A8 /* UIViewController+LCAdd.m in Sources */,
 				A7141E5F2240970C00D67ECB /* LCCheckPhotoView.m in Sources */,
+				A73186E0224A050800A35E69 /* MBProgressHUD.m in Sources */,
 				A7141E5C224096F300D67ECB /* LCPhotoInfoCollectionViewCell.m in Sources */,
 				A7141E6F2240B5DE00D67ECB /* SDPhotoBrowser.m in Sources */,
+				A73186D62249EC1000A35E69 /* PhotoTypeListViewController.m in Sources */,
 				A7141E712240B5DE00D67ECB /* SDBrowserImageView.m in Sources */,
+				A73186C72249D08700A35E69 /* HomeCollectionViewCell.m in Sources */,
+				A73186D02249EBD800A35E69 /* PickerTypeListViewController.m in Sources */,
+				A7FE498422487C7800EEE8E1 /* LCSearchView.m in Sources */,
+				A73186DF224A050800A35E69 /* MBProgressHUD+Simplify.m in Sources */,
 				A7CAC9262223C9590016C4A8 /* UIView+LCAdd.m in Sources */,
 				A77D548622251E2D00B3DBB4 /* LCNavigationControllerIntercepter.m in Sources */,
 				A71BFB1E223F346900C2C87E /* LCAPIBaseManager.m in Sources */,
 				A7141E5522408BE500D67ECB /* LCPickerView.m in Sources */,
 				A71BFB22223F3C9300C2C87E /* LCNumberView.m in Sources */,
 				A77D545E2224D65200B3DBB4 /* MainTabBarController.m in Sources */,
-				A77D54642224DAEC00B3DBB4 /* HomeViewController.m in Sources */,
+				A73186CD2249EBC200A35E69 /* SortViewController.m in Sources */,
 				A7CAC92C2223C97E0016C4A8 /* CAGradientLayer+LCAdd.m in Sources */,
 				A7CAC9382223D3540016C4A8 /* LCSortDataModel.m in Sources */,
 				A7141E702240B5DE00D67ECB /* SDWaitingView.m in Sources */,
 				A7CAC9292223C9650016C4A8 /* UIButton+LCAdd.m in Sources */,
 				A76EFC1220E278E7006346F5 /* main.m in Sources */,
 				A0830D5820EF087300B5D9F7 /* LCGuideView.m in Sources */,
+				A7FE498822487FF600EEE8E1 /* LCSegementView.m in Sources */,
 				A76EFC0220E27859006346F5 /* AppDelegate.m in Sources */,
 				A7CAC9162223C25C0016C4A8 /* LCBannerView.m in Sources */,
 				A7CAC9352223D0B80016C4A8 /* LCSortView.m in Sources */,
 				A77D548322251DFE00B3DBB4 /* LCViewControllerIntercepter.m in Sources */,
+				A73186D92249EC1E00A35E69 /* PhotoViewController.m in Sources */,
 				A7CAC91D2223C9120016C4A8 /* UIImage+LCAdd.m in Sources */,
 				A7141E652240B12B00D67ECB /* AppDelegate+AppService.m in Sources */,
 				A7141E59224096D000D67ECB /* LCPhotoView.m in Sources */,
 				A7141E762240CCCD00D67ECB /* LCCalendarViewController.m in Sources */,
 				A77D54612224D66C00B3DBB4 /* RootNavigationController.m in Sources */,
+				A73186BD2249C3BA00A35E69 /* BannerViewController.m in Sources */,
 				A7EA78CF221E6C1000BFFCFF /* LCAlertView.m in Sources */,
 				A7CAC91A2223C8FD0016C4A8 /* NSString+LCAdd.m in Sources */,
 				A76EFC0E20E278E7006346F5 /* ViewController.m in Sources */,
 				A7CAC9202223C93D0016C4A8 /* UIResponder+LCAdd.m in Sources */,
 				A7CAC92F2223C98B0016C4A8 /* NSDate+LCAdd.m in Sources */,
+				A73186B42249C33F00A35E69 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

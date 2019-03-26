@@ -19,7 +19,7 @@
     
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     //设置导航栏背景颜色
-    [navigationBar setBackgroundImage:[UIImage imageWithColor:KWhiteColor] forBarMetrics:UIBarMetricsDefault];
+    [navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor cyanColor]] forBarMetrics:UIBarMetricsDefault];
     //设置NavigationBarItem文字的颜色
     [navigationBar setTintColor:KBlackColor];
     //设置状态栏+标题栏颜色

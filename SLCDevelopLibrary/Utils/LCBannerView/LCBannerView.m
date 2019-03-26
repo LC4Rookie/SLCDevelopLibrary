@@ -44,8 +44,8 @@
 /** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
     
-    if ([self.delegate respondsToSelector:@selector(bannerViewDidSelectAtIndex:)]) {
-        [self.delegate bannerViewDidSelectAtIndex:index];
+    if ([self.delegate respondsToSelector:@selector(bannerView:didSelectAtIndex:)]) {
+        [self.delegate bannerView:self didSelectAtIndex:index];
     }
 }
 

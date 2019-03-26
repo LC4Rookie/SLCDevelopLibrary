@@ -44,7 +44,15 @@
     
     [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.scrollView.mas_bottom);
+        make.left.right.bottom.mas_equalTo(0);
     }];
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    int page = scrollView.contentOffset.x / scrollView.width + 0.5;
+    self.pageControl.currentPage = page;
 }
 
 #pragma mark - event response
@@ -84,7 +92,8 @@
         LCSortDataModel *dataModel = [self.sortDataArray objectAtIndex:i];
         [button setTitle:dataModel.sortName forState:UIControlStateNormal];
         NSString *imageData = dataModel.sortImageData;
-        CGFloat imageSize = (buttonWidth > buttonHeight) ? (buttonWidth - 20) : (buttonHeight - 20);
+        CGFloat differentValue = fabs(buttonWidth - buttonHeight);
+        CGFloat imageSize = (buttonWidth > buttonHeight) ? (buttonWidth - 20 - differentValue) : (buttonHeight - 20 - differentValue);
         //字符串 判断是否为url
         if ([imageData rangeOfString:@"http"].location != NSNotFound) {
             //url
@@ -135,6 +144,9 @@
     
     if (!_pageControl) {
         _pageControl = [[UIPageControl alloc] init];
+        _pageControl.pageIndicatorTintColor = KGray2Color;
+        _pageControl.currentPageIndicatorTintColor = KRedColor;
+        _pageControl.hidesForSinglePage = YES;
     }
     return _pageControl;
 }
@@ -161,6 +173,7 @@
     //计算scrollView.contentSize
     NSInteger divideValue = (sortDataArray.count / (self.row * self.section));
     NSInteger page = (sortDataArray.count % (self.row * self.section)) ? (divideValue + 1) : divideValue;
+    self.pageControl.numberOfPages = page;
     self.scrollView.contentSize = CGSizeMake(self.scrollView.width * page, self.scrollView.height);
     //布局
     [self layoutSortItem];
